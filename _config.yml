@@ -1,0 +1,44 @@
+# _config.yml
+
+# Site settings
+title: My Project
+description: My awesome project
+baseurl: "" # leave empty if deploying to root
+url: "https://username.github.io" # replace with your GitHub Pages URL
+
+# Theme
+theme: jekyll-theme-primer
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Exclude unnecessary files and folders from build
+exclude:
+  - node_modules
+  - frontend/node_modules
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - README.md
+  - .gitignore
+  - .github
+  - .vscode
+  - Dockerfile
+  - docs
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Optional: future posts
+future: true
+
+# Optional: verbose build logs
+verbose: true
